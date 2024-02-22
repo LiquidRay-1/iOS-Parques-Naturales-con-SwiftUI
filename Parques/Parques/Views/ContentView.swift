@@ -50,5 +50,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView(landmark: landmarks[0])
+    ContentView(landmark: ModelData().landmarks[0])
 }

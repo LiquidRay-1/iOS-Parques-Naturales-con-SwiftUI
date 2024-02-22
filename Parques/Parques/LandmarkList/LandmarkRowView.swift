@@ -36,24 +36,15 @@ struct LandmarkRowView: View {
 
 #Preview("Lista") {
     Group{
-        LandmarkRowView(landmark: landmarks[0])
-        LandmarkRowView(landmark: landmarks[1])
-        LandmarkRowView(landmark: landmarks[2])
-        LandmarkRowView(landmark: landmarks[3])
-        LandmarkRowView(landmark: landmarks[4])
-        LandmarkRowView(landmark: landmarks[5])
-        LandmarkRowView(landmark: landmarks[6])
-        LandmarkRowView(landmark: landmarks[7])
-        LandmarkRowView(landmark: landmarks[8])
-        LandmarkRowView(landmark: landmarks[9])
-        LandmarkRowView(landmark: landmarks[10])
-        LandmarkRowView(landmark: landmarks[11])
-
+        LandmarkRowView(landmark: ModelData().landmarks[0])
+        LandmarkRowView(landmark: ModelData().landmarks[1])
+        LandmarkRowView(landmark: ModelData().landmarks[2])
+        LandmarkRowView(landmark: ModelData().landmarks[3])
     }
 }
 
 #Preview("Individual") {
     Group{
-        LandmarkRowView(landmark: landmarks[0])
+        LandmarkRowView(landmark: ModelData().landmarks[0])
     }
 }
