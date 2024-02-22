@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D79983B2B87DD8B00ECACC4 /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D79983A2B87DD8B00ECACC4 /* FavoriteButton.swift */; };
 		3D9E85D72B7D27E8003122DD /* ParquesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9E85D62B7D27E8003122DD /* ParquesApp.swift */; };
 		3D9E85D92B7D27E8003122DD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9E85D82B7D27E8003122DD /* ContentView.swift */; };
 		3D9E85DB2B7D27E9003122DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D9E85DA2B7D27E9003122DD /* Assets.xcassets */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3D79983A2B87DD8B00ECACC4 /* FavoriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButton.swift; sourceTree = "<group>"; };
 		3D9E85D32B7D27E8003122DD /* Parques.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Parques.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D9E85D62B7D27E8003122DD /* ParquesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParquesApp.swift; sourceTree = "<group>"; };
 		3D9E85D82B7D27E8003122DD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -87,10 +89,10 @@
 		3D9E85EE2B7D4388003122DD /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				3D9E85F62B7D53C0003122DD /* Detalles */,
 				3D9E85D82B7D27E8003122DD /* ContentView.swift */,
 				3D9E85E42B7D2EE5003122DD /* CircleImage.swift */,
 				3D9E85E62B7D31CD003122DD /* MapView.swift */,
+				3D79983A2B87DD8B00ECACC4 /* FavoriteButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -119,13 +121,6 @@
 				3D9E85F32B7D4DFA003122DD /* LandmarkList.swift */,
 			);
 			path = LandmarkList;
-			sourceTree = "<group>";
-		};
-		3D9E85F62B7D53C0003122DD /* Detalles */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Detalles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,6 +197,7 @@
 				3D9E85D92B7D27E8003122DD /* ContentView.swift in Sources */,
 				3D9E85E72B7D31CD003122DD /* MapView.swift in Sources */,
 				3D9E85D72B7D27E8003122DD /* ParquesApp.swift in Sources */,
+				3D79983B2B87DD8B00ECACC4 /* FavoriteButton.swift in Sources */,
 				3D9E85F42B7D4DFA003122DD /* LandmarkList.swift in Sources */,
 				3D9E85E52B7D2EE5003122DD /* CircleImage.swift in Sources */,
 				3D9E85F22B7D44D8003122DD /* LandmarkRowView.swift in Sources */,

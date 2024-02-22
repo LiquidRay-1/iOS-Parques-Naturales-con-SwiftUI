@@ -8,8 +8,17 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @Environment(ModelData.self) var modelData
+    
     var landmark: Landmark
+    
+    var landmarkIndex: Int{
+        modelData.landmarks.firstIndex(where: {$0.id == landmark.id})!
+    }
+    
     var body: some View {
+        @Bindable var modelData = modelData
         ScrollView{
             VStack {
                 
@@ -21,10 +30,13 @@ struct ContentView: View {
                     .padding(.bottom, -130)
                 
                 VStack {
-                    Text(landmark.name)
-                        .font(.largeTitle)
-                        .fontWeight(.bold)
+                    HStack {
+                        Text(landmark.name)
+                            .font(.largeTitle)
+                            .fontWeight(.bold)
                         .foregroundColor(Color.yellow)
+                        FavoriteButton(isSet: $modelData.landmarks[landmarkIndex].isFavorite)
+                    }
                     
                     Spacer()
                     
@@ -51,4 +63,5 @@ struct ContentView: View {
 
 #Preview {
     ContentView(landmark: ModelData().landmarks[0])
+        .environment(ModelData())
 }
