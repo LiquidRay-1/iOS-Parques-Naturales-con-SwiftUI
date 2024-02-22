@@ -16,7 +16,7 @@ struct LandmarkRowView: View {
             landmark.image
                 .resizable()
                 .frame(width: 50, height: 50)
-                .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
+                .clipShape(Circle())
                 .overlay{
                     Circle().stroke(.white, lineWidth: 3)
                 }
