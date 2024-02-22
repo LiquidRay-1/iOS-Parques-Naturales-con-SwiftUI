@@ -20,8 +20,15 @@ struct LandmarkRowView: View {
                 .overlay{
                     Circle().stroke(.white, lineWidth: 3)
                 }
+                
                 .shadow(radius: 6)
+            Spacer()
             Text(landmark.name)
+            Spacer()
+            if landmark.isFavorite{
+                Image(systemName: "star.fill")
+                .foregroundStyle(.yellow)
+            }
             Spacer()
         }
     }
